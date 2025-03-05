@@ -76,5 +76,46 @@ $ git commit --amend
 User@DESKTOP-16FEKJQ MINGW64 ~/Desktop/Advanced (main)
 $
 ```
-###
+## Challenge 2
+``bash
+User@DESKTOP-16FEKJQ MINGW64 ~/Desktop/Advanced (main)
+$ git rebase -i HEAD~4
+[detached HEAD 9e310f5] chore: Create Second file
+ Date: Mon Mar 3 11:28:35 2025 +0200
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test2.md
+Successfully rebased and updated refs/heads/main.
+```
+## Challenge 3
+``bash
+
+git log --oneline
+>>
+d552b80 (HEAD -> main) challenge 1 Part 1 Readme
+d466128 chore: Create third and fourth files
+9e310f5 chore: Create Second file
+4701990 chore: Create initial file
+1db6c0f readme file
+
+git rebase -i HEAD~4
+>>
+[detached HEAD 99e70d4] chore: Create initial file
+ Date: Mon Mar 3 11:28:13 2025 +0200
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test1.md
+ create mode 100644 test2.md
+Successfully rebased and updated refs/heads/main.
+PS C:\Users\User\Desktop\Advanced> git log --oneline   
+>>
+38189ce (HEAD -> main) challenge 1 Part 1 Readme
+62559fb chore: Create third and fourth files
+99e70d4 chore: Create initial file
+1db6c0f readme file
+PS C:\Users\User\Desktop\Advanced> 
+
+
+
+```
+
+
 
