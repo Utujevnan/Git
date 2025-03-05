@@ -76,6 +76,7 @@ $ git commit --amend
 User@DESKTOP-16FEKJQ MINGW64 ~/Desktop/Advanced (main)
 $
 ```
+<<<<<<< HEAD
 ## Challenge 2
 ``bash
 User@DESKTOP-16FEKJQ MINGW64 ~/Desktop/Advanced (main)
@@ -118,4 +119,7 @@ PS C:\Users\User\Desktop\Advanced>
 ```
 
 
+=======
+###
+>>>>>>> caca87dcec3680ed184319f766953164e82331f7
 
