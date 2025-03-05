@@ -76,19 +76,27 @@ $ git commit --amend
 User@DESKTOP-16FEKJQ MINGW64 ~/Desktop/Advanced (main)
 $
 ```
-<<<<<<< HEAD
 ## Challenge 2
-``bash
-User@DESKTOP-16FEKJQ MINGW64 ~/Desktop/Advanced (main)
+
+
+```bash
+
 $ git rebase -i HEAD~4
 [detached HEAD 9e310f5] chore: Create Second file
  Date: Mon Mar 3 11:28:35 2025 +0200
  1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 test2.md
 Successfully rebased and updated refs/heads/main.
+
 ```
+
+
+
+
+
 ## Challenge 3
-``bash
+
+```bash
 
 git log --oneline
 >>
@@ -115,11 +123,58 @@ PS C:\Users\User\Desktop\Advanced> git log --oneline
 PS C:\Users\User\Desktop\Advanced> 
 
 
+```
 
+## challenge4
+
+```bash
+ git reset --soft 62559fb^  
+>>
+PS C:\Users\User\Desktop\Advanced> git add third-file.md      
+>>
+fatal: pathspec 'third-file.md' did           any files       
+>>
+On branch main
+  (use "git restore --staged <file>..." to unstage)
+        modified:   readme.md
+        new file:   test4.md
+
+PS C:\Users\User\Desktop\Advanced> git restore --staged readme.md
+PS C:\Users\User\Desktop\Advanced> git restore --staged test4.>>
+PS C:\Users\User\Desktop\Advanced> git commit -m "Create Third File"
+>> 
+[main 8d2e445] Create Third File
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test3.md
+PS C:\Users\User\Desktop\Advanced> git add test4.md
+>>
+PS C:\Users\User\Desktop\Advanced> git status
+>>
+On branch main
+Changes to be committed:
+        new file:   test4.md
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)  
+irectory)
+        modified:   readme.md
+PS C:\Users\User\Desktop\Advanced> git commit -m "Create Fourth File"
+>> 
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test4.md
+PS C:\Users\User\Desktop\Advanced> git add readme.md
+>>
+PS C:\Users\User\Desktop\Advanced> git commit -m "Update readme.md"
+[main 7a5cf33] Update readme.md
+ 1 file changed, 125 insertions(+)
+PS C:\Users\User\Desktop\Advanced> git log --oneline
+>> 
+7a5cf33 (HEAD -> main) Update readme.md
+7b70c35 Create Fourth File
+8d2e445 Create Third File
+99e70d4 chore: Create initial file
+1db6c0f readme file
 ```
 
 
-=======
-###
->>>>>>> caca87dcec3680ed184319f766953164e82331f7
 
