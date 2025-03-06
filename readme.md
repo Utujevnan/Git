@@ -175,6 +175,39 @@ PS C:\Users\User\Desktop\Advanced> git log --oneline
 99e70d4 chore: Create initial file
 1db6c0f readme file
 ```
+## Challenge 5
+```bash
+git rebase -i HEAD~5
+[detached HEAD cb8eb33] Create Third  and Create Fourth Files
+ Date: Wed Mar 5 10:14:45 2025 +0200
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test3.md
+ create mode 100644 test4.md
 
+ ```
 
+ ## Challenge 6
 
+```bash
+echo "This is an unwanted commit" > unwanted.txt
+>>
+PS C:\Users\User\Desktop\Advanced> git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+
+PS C:\Users\User\Desktop\Advanced> git commit -m "Unwanted commit"
+[main 50b9484] Unwanted commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 unwanted.txt
+PS C:\Users\User\Desktop\Advanced> git log --oneline --graph --decorate
+>> 
+* 50b9484 (HEAD -> main) Unwanted commit
+n/Git
+| *   436e8ff challenge 3 part 1
+| |\
+| | * caca87d challenge 1 Part 1 Readme
+
+git log --oneline --graph --decorate
+
+```
