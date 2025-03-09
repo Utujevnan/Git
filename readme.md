@@ -278,7 +278,7 @@ CHALLENGE 10
 ```bash
 
 ```
-#PART 2
+# PART 2
 
 ## CHALLENGE 1
 ```bash
@@ -325,7 +325,4 @@ PS C:\Users\User\Desktop\Advanced> git commit -m "Updated project readme"
    
  ``
 
- ## CHALLENGE 6
- ```bash
-hhhhhhhhhhhhhhh
- ```
+ 
