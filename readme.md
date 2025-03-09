@@ -1,7 +1,11 @@
-# PART 1
-## Challenge 1
+
+#PART 1
+
+## CHALLENGE 1
 
 ```bash
+
+
 
 User@DESKTOP-16FEKJQ MINGW64 ~/Desktop/Advanced (main)
 $ touch test{1..4}.md
@@ -76,11 +80,8 @@ $ git commit --amend
 User@DESKTOP-16FEKJQ MINGW64 ~/Desktop/Advanced (main)
 $
 ```
-## Challenge 2
-
-
+## CHALLENGE 2
 ```bash
-
 $ git rebase -i HEAD~4
 [detached HEAD 9e310f5] chore: Create Second file
  Date: Mon Mar 3 11:28:35 2025 +0200
@@ -90,14 +91,8 @@ Successfully rebased and updated refs/heads/main.
 
 ```
 
-
-
-
-
-## Challenge 3
-
+## CHALLENGE 3
 ```bash
-
 git log --oneline
 >>
 d552b80 (HEAD -> main) challenge 1 Part 1 Readme
@@ -122,11 +117,9 @@ PS C:\Users\User\Desktop\Advanced> git log --oneline
 1db6c0f readme file
 PS C:\Users\User\Desktop\Advanced> 
 
-
 ```
 
-## challenge4
-
+## Challenge 4
 ```bash
  git reset --soft 62559fb^  
 >>
@@ -175,7 +168,7 @@ PS C:\Users\User\Desktop\Advanced> git log --oneline
 99e70d4 chore: Create initial file
 1db6c0f readme file
 ```
-## Challenge 5
+## CHALLENGE 5
 ```bash
 git rebase -i HEAD~5
 [detached HEAD cb8eb33] Create Third  and Create Fourth Files
@@ -183,11 +176,8 @@ git rebase -i HEAD~5
  2 files changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 test3.md
  create mode 100644 test4.md
-
  ```
-
- ## Challenge 6
-
+CHALLENGE 6
 ```bash
 echo "This is an unwanted commit" > unwanted.txt
 >>
@@ -209,5 +199,133 @@ n/Git
 | | * caca87d challenge 1 Part 1 Readme
 
 git log --oneline --graph --decorate
+```
+
+## CHALLENGE 8
+```bash
+git checkout -b ft/branch
+>>
+Switched to a new branch 'ft/branch'
+PS C:\Users\User\Desktop\Advanced> echo "This is some sample content for test5.md" > test5.md
+>>
+PS C:\Users\User\Desktop\Advanced> git add test5.md
+>>
+PS C:\Users\User\Desktop\Advanced> git commit -m "Implemented test 5"
+>> 
+[ft/branch 4547184] Implemented test 5
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test5.md
+PS C:\Users\User\Desktop\Advanced> git log --oneline
+>> 
+ec66a47 (origin/main, main) updated readme file and did part 1 challenge 6
+cf0f433 Merge branch 'main' of https://github.com/Utujevnan/Git
+7a5cf33 Update readme.md
+8d2e445 Create Third File
+436e8ff challenge 3 part 1
+7d6dd7e challenge 3 part 1
+38189ce challenge 1 Part 1 Readme
+62559fb chore: Create third and fourth files
+caca87d challenge 1 Part 1 Readme
+9a197a1 chore: Create third and fourth files
+PS C:\Users\User\Desktop\Advanced>
+PS C:\Users\User\Desktop\Advanced> git checkout main
+>>
+Switched to branch 'main'
+PS C:\Users\User\Desktop\Advanced> git cherry-pick 4547184
+>> 
+[main bd90416] Implemented test 5
+ Date: Fri Mar 7 11:32:31 2025 +0200
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test5.md
+PS C:\Users\User\Desktop\Advanced> git log --oneline
+>> 
+ec66a47 (origin/main) updated readme file and did part 1 challenge 6
+a10706b Update readme.md
+cf0f433 Merge branch 'main' of https://github.com/Utujevnan/Git
+7a5cf33 Update readme.md
+7b70c35 Create Fourth File
+8d2e445 Create Third File
+436e8ff challenge 3 part 1
+7d6dd7e challenge 3 part 1
+38189ce challenge 1 Part 1 Readme
+62559fb chore: Create third and fourth files
+99e70d4 chore: Create initial file
+caca87d challenge 1 Part 1 Readme
+9a197a1 chore: Create third and fourth files
+PS C:\Users\User\Desktop\Advanced>
+PS C:\Users\User\Desktop\Advanced> 
+```
+CHALLENGE 9
+```bash
+ git log --graph --oneline --decorate --all
+>> 
+| * 4547184 (ft/branch) Implemented test 5
+|/
+* ec66a47 (origin/main) updated readme file and did part 1 challenge 6
+* a10706b Update readme.md
+*   cf0f433 Merge branch 'main' of https://github.com/Utujevnan/Git
+|\
+| *   436e8ff challenge 3 part 1
+| |\
+| | * caca87d challenge 1 Part 1 Readme
+| | * 9a197a1 chore: Create third and fourth files
+| | * 854ee98 chore: Create another file
+| | * 4701990 chore: Create initial file
+| * | 7d6dd7e challenge 3 part 1
+PS C:\Users\User\Desktop\Advanced>
+```
+CHALLENGE 10
+```bash
 
 ```
+#PART 2
+
+## CHALLENGE 1
+```bash
+git checkout -b  ft/new-feature
+```
+## CHALLENGE 2
+```bash
+git add feature.txt
+>>
+PS C:\Users\User\Desktop\Advanced> git status
+On branch ft/new-feature
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   feature.txt
+
+PS C:\Users\User\Desktop\Advanced> git commit -m "Implemented core functionality for new feature"
+>>
+[ft/new-feature 729096f] Implemented core functionality for new feature
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 feature.txt
+ ```
+
+ ## CHALLENGE 3
+
+ ```bash
+
+ git add readme.txt
+PS C:\Users\User\Desktop\Advanced> git commit -m "Updated project readme"
+[main 8a2898b] Updated project readme
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 readme.txt
+
+ ```
+
+
+
+
+ ## CHALLENGE 5
+
+
+ ```bash
+ git push origin --delete ft/newfeature
+
+   
+ ``
+
+ ## CHALLENGE 6
+ ```bash
+hhhhhhhhhhhhhhh
+ ```
