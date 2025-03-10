@@ -324,5 +324,104 @@ PS C:\Users\User\Desktop\Advanced> git commit -m "Updated project readme"
 
    
  ``
+ ## CHALLENGE 6
+
+ ```bash
+ git log --oneline
+>> 
+7445798 (HEAD -> main, origin/main) Updated project readme
+8a2898b Updated project readme
+bd90416 Implemented test 5
+a10706b Update readme.md
+cf0f433 Merge branch 'main' of https://github.com/Utujevnan/Git
+7a5cf33 Update readme.md
+7b70c35 Create Fourth File
+8d2e445 Create Third File
+436e8ff challenge 3 part 1
+7d6dd7e challenge 3 part 1
+38189ce challenge 1 Part 1 Readme
+62559fb chore: Create third and fourth files
+PS C:\Users\User\Desktop\Advanced> git checkout -b ft/new-branch-from-commit HEAD~2
+
+```
+
+## CHALLENGE 7
+```bash
+git checkout main
+>>
+Switched to branch 'main'
+PS C:\Users\User\Desktop\Advanced> git branch
+  ft/branch
+  ft/new-branch-from-commit
+* main
+PS C:\Users\User\Desktop\Advanced> git merge ft/new-branch-from-commit
+>>
+Already up to date.
+PS C:\Users\User\Desktop\Advanced> 
+```
+
+## CHALLENGE 8
+
+```bash
+git checkout ft/new-branch-from-commit
+>>
+Switched to branch 'ft/new-branch-from-commit'
+PS C:\Users\User\Desktop\Advanced> git rebase main
+Successfully rebased and updated refs/heads/ft/new-branch-from-commit.
+PS C:\Users\User\Desktop\Advanced>
+
+```
+## CHALLENGE 9
+```bash
+git branch -m ft/new-branch-from-commit ft/improved-branch-name
+>>
+```
+
+## CHALLENGE 10
+
+```bash
+ git log --oneline
+>>
+78b2996 Updated project readme
+8a2898b Updated project readme
+bd90416 Implemented test 5
+ec66a47 updated readme file and did part 1 challenge 6
+a10706b Update readme.md
+cf0f433 Merge branch 'main' of https://github.com/Utujevnan/Git
+7a5cf33 Update readme.md
+7b70c35 Create Fourth File
+8d2e445 Create Third File
+436e8ff challenge 3 part 1
+7d6dd7e challenge 3 part 1
+38189ce challenge 1 Part 1 Readme
+62559fb chore: Create third and fourth files
+PS C:\Users\User\Desktop\Advanced> git checkout 78b2996      
+Note: switching to '78b2996'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 78b2996 Updated project readme
+PS C:\Users\User\Desktop\Advanced> git checkout main
+>>
+Previous HEAD position was 78b2996 Updated project readme
+Switched to branch 'main'
+PS C:\Users\User\Desktop\Advanced> git checkout -b new-branch-name
+>>
+Switched to a new branch 'new-branch-name'
+PS C:\Users\User\Desktop\Advanced> 
+```
+
+
 
  
