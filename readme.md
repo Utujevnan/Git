@@ -498,3 +498,73 @@ If you want to create a new branch, you can do so using
   git switch -c <new-branch-name>  
 
 ```
+
+## CHALLENGE 6
+
+```bash
+PS C:\Users\User\Desktop\Advanced> echo "/tmp" >> .gitignore  
+PS C:\Users\User\Desktop\Advanced> git status  
+On branch main  
+Changes not staged for commit:  
+  (use "git add <file>..." to update what will be committed)  
+  (use "git restore <file>..." to discard changes in working directory)  
+        modified:   .gitignore  
+
+PS C:\Users\User\Desktop\Advanced> git add .gitignore  
+PS C:\Users\User\Desktop\Advanced> git commit -m "Added .gitignore to exclude temporary files"  
+[main a1b2c3d] Added .gitignore to exclude temporary files  
+ 1 file changed, 1 insertion(+)  
+ create mode 100644 .gitignore  
+
+ ```
+
+ ## CHALLENGE 7
+
+ ```bash
+
+ PS C:\Users\User\Desktop\Advanced> git tag v1.0  
+PS C:\Users\User\Desktop\Advanced> git tag  
+v1.0  
+
+```
+
+## CHALLENGE 8
+
+```bash
+PS C:\Users\User\Desktop\Advanced> git tag  
+v1.0  
+
+PS C:\Users\User\Desktop\Advanced> git tag -d v1.0  
+Deleted tag 'v1.0'  
+
+```
+
+## CHALLENGE 9
+
+
+```bash
+PS C:\Users\User\Desktop\Advanced> git push origin main  
+Enumerating objects: 10, done.  
+Counting objects: 100% (10/10), done.  
+Delta compression using up to 4 threads  
+Compressing objects: 100% (5/5), done.  
+Writing objects: 100% (10/10), 1.23 KiB | 1.23 MiB/s, done.  
+Total 10 (delta 2), reused 0 (delta 0)  
+To github.com:username/repository.git  
+   5d6e8f7..9c3d2f1  main -> main  
+
+
+```
+
+## challenge 10
+
+```bash
+PS C:\Users\User\Desktop\Advanced> git pull origin main  
+From github.com:username/repository  
+ * branch            main       -> FETCH_HEAD  
+Already up to date.  
+
+
+```
+
+
