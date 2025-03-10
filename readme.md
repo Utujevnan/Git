@@ -410,3 +410,91 @@ If you want to create a new branch, you can do so using
   git switch -c <new-branch-name>  
 
 ```
+
+# PART 3
+## CHALLENGE 1
+```bash
+git stash
+>>
+Saved working directory and index state WIP on main: 3b5f2c1 Resolved merge conflicts and merged ft/new-branch-from-commit into main
+PS C:\Users\User\Desktop\Advanced> git status
+On branch main
+nothing to commit, working tree clean
+```
+## CHALLENGE 2
+```bash
+git stash pop
+>>
+PS C:\Users\User\Desktop\Advanced> git stash list  
+stash@{0}: WIP on main: 3b5f2c1 Resolved merge conflicts and merged ft/new-branch-from-commit into main  
+
+PS C:\Users\User\Desktop\Advanced> git stash pop  
+On branch main  
+Changes to be committed:  
+  (use "git restore --staged <file>..." to unstage)  
+
+Dropped stash@{0}  
+
+```
+
+## CHALLENGE 3
+
+```bash
+git checkout -b ft/conflict-test
+echo "This line will cause a conflict" >> conflict.txt
+git add conflict.txt
+git commit -m "Added conflicting line in feature branch"
+>>
+[ft/conflict-test 5d6e8f7] Added conflicting line in feature branch
+ 1 file changed, 1 insertion(+)
+
+git checkout main
+echo "This is a different conflicting change" >> conflict.txt
+git add conflict.txt
+git commit -m "Added conflicting line in main branch"
+>>
+[main 7f8a9b3] Added conflicting line in main branch
+ 1 file changed, 1 insertion(+)
+
+git merge ft/conflict-test
+>>
+Auto-merging conflict.txt
+CONFLICT (content): Merge conflict in conflict.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+```
+
+## CHALLENGE 4
+
+```bash
+git mergetool
+>>
+Merging:
+conflict.txt
+
+Normal merge conflict resolution process will begin
+Hit ENTER to launch the merge tool
+PS C:\Users\User\Desktop\Advanced> git commit -m "Resolved merge conflict using mergetool"
+[main 9c3d2f1] Resolved merge conflict using mergetool
+
+```
+
+## CHALLENGE 5
+
+```bash
+git checkout <commit-hash>
+>>
+PS C:\Users\User\Desktop\Advanced> git log --oneline  
+9c3d2f1 Resolved merge conflict using mergetool  
+7f8a9b3 Added conflicting line in main branch  
+5d6e8f7 Added conflicting line in feature branch  
+
+PS C:\Users\User\Desktop\Advanced> git checkout 5d6e8f7  
+Note: switching to '5d6e8f7'.  
+
+You are in 'detached HEAD' state.  
+You can look around, make experimental changes, and commit them.  
+If you want to create a new branch, you can do so using  
+  git switch -c <new-branch-name>  
+
+```
