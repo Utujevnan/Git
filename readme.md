@@ -83,7 +83,7 @@ User@DESKTOP-16FEKJQ MINGW64 ~/Desktop/Advanced (main)
 $
 ```
 ## CHALLENGE 2
-## CHALLENGE 2
+
 ```bash
 $ git rebase -i HEAD~4
 [detached HEAD 9e310f5] chore: Create Second file
@@ -94,7 +94,6 @@ Successfully rebased and updated refs/heads/main.
 
 ```
 
-## CHALLENGE 3
 ## CHALLENGE 3
 ```bash
 git log --oneline
@@ -124,7 +123,7 @@ PS C:\Users\User\Desktop\Advanced>
 ```
 
 ## Challenge 4
-## Challenge 4
+
 ```bash
  git reset --soft 62559fb^  
 >>
@@ -174,7 +173,7 @@ PS C:\Users\User\Desktop\Advanced> git log --oneline
 1db6c0f readme file
 ```
 ## CHALLENGE 5
-## CHALLENGE 5
+
 ```bash
 git rebase -i HEAD~5
 [detached HEAD cb8eb33] Create Third  and Create Fourth Files
@@ -569,12 +568,5 @@ Already up to date.
 
 ## challenge 10
 
-```bash
-PS C:\Users\User\Desktop\Advanced> git pull origin main  
-From github.com:username/repository  
- * branch            main       -> FETCH_HEAD  
-Already up to date.  
 
-
-```
 
